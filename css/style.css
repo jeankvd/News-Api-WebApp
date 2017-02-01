@@ -4,8 +4,12 @@
 	background-color: #252525;
 }
 
-body {
+a, a:hover {
+  color: #252525;
+}
 
+.content {
+  margin-left: 100px;
 }
 
 /*SIDEBAR*/
@@ -13,11 +17,12 @@ body {
 .sidebar {
 	height: 100%;
 	float: left;
-	display: fixed;
+	position: absolute;
 	border-right: 1px solid #e7e7e7;
 	margin-right: 20px;
 	min-width: 86px;
 	max-width: 86px;
+  z-index: 200;
  }    
 
 .sidebar .section {
@@ -85,4 +90,52 @@ body {
 	margin-right: -100px;
 	padding-right: 180px;
 	text-align: left;
+}
+
+/*CARDS COLOR PALETTE*/
+
+.card {
+  border-bottom: solid 4px;
+}
+
+
+.card-number-1 {
+  border-bottom-color: #2eb398;
+}
+
+.card-number-2 {
+  border-bottom-color: #e76049;
+}
+
+.card-number-3 {
+  border-bottom-color: #14b9d6;
+}
+
+.card-number-4 {
+  border-bottom-color: #252525;
+}
+
+.card-number-5 {
+  border-bottom-color: #5692b1;
+}
+
+.card-number-6 {
+  border-bottom-color: #dd1787;
+}
+
+
+/*IMAGE OVERLAY*/
+
+.card {
+  
+}
+
+.overlay-text {
+  display: none;
+}
+
+.card:hover .overlay-text {
+  display:block;
+  background-color:red;
+  position: absolute;
 }
