@@ -12,6 +12,22 @@ a, a:hover {
   margin-left: 100px;
 }
 
+/*NAVBAR*/
+
+nav a {
+  margin-left: 20px;
+}
+
+/*LOGO*/
+
+#logo {
+  margin-bottom: 5px;
+}
+
+.logo-text {
+  margin-left: 15px;
+}
+
 /*SIDEBAR*/
 
 .sidebar {
@@ -30,11 +46,12 @@ a, a:hover {
 	border-bottom: solid 1px #e7e7e7;
 	padding: 20px;
 	height: 76px;
-	text-align: center;
 }
 
 .sidebar .fa {
 	font-size: 2em;
+  position: absolute;
+  left: 29.4;
 }
 
 /*SIDEBAR COLOR PALETTE*/
@@ -78,24 +95,27 @@ a, a:hover {
 /*SIDEBAR INTERACTIVITY (JS STYLES)*/
 
 .title-text {
+  position: static;
 	display: none;
 	color: #fbfbfb;
 	font-size: 1.4em;
 	font-weight: bold;
 	margin-bottom: 0;
-	margin-left: 10px;
+  margin-left: 55px;
 }
 
-.active {
+.hovered {
 	margin-right: -100px;
 	padding-right: 180px;
 	text-align: left;
+  transition: all .3s ease;
 }
 
 /*CARDS COLOR PALETTE*/
 
 .card {
   border-bottom: solid 4px;
+  
 }
 
 
@@ -123,19 +143,11 @@ a, a:hover {
   border-bottom-color: #dd1787;
 }
 
+/*PLACEHOLDER TEXT*/
 
-/*IMAGE OVERLAY*/
-
-.card {
-  
-}
-
-.overlay-text {
-  display: none;
-}
-
-.card:hover .overlay-text {
-  display:block;
-  background-color:red;
+#placeholder-text {
+  color: #e76049;
   position: absolute;
-}
+  display:block;
+  margin-top: 50px;
+  margin-left: 2%;
