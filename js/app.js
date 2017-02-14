@@ -21,7 +21,9 @@ $(".section").hover(function(evt){
 
 $(".section").click(function(evt){
 	/*Reset .content*/
-  $(".content").html("<h2 id='placeholder-text'>Searching, Please Wait.</h2>");  
+	$(this).removeClass("hovered");
+	$(".title-text").hide();
+  	$(".content").html("<h2 id='placeholder-text'>Searching, Please Wait.</h2>");  
   
   //Variables for the getAJAX request
 	var url = "https://newsapi.org/v1/articles?source="

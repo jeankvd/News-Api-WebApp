@@ -45,8 +45,7 @@ h1 {
 }
 
 #disclaimer {
-	position: absolute;
-	bottom: 100;
+	padding-top: 25px;
 	text-align: left;
 }
 
@@ -71,12 +70,14 @@ h1 {
 }
 
 .sidebar .fa {
-	font-size: 2em;
+  font-size: 2em;
   position: absolute;
-  left: 29.4;
+  left: 29.4px;
 }
 
 /*SIDEBAR COLOR PALETTE*/
+
+
 
 .fa-flask {
 	color: #14b9d6;
